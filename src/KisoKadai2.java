@@ -3,17 +3,17 @@ import java.io.*;
 public class KisoKadai2 {
 
 	public static void main(String[] args) {
-		System.out.println("1`100‚Ü‚Å‚Ì®”‚ğ“–‚Ä‚éƒQ[ƒ€‚Å‚·");
-		// ÅŒã‚É1‚ğ“ü—Í‚µ‚½‚ç‘±sA2‚ğ“ü—Í‚µ‚½‚çI—¹‚·‚é‚Ì‚Åx‚ğ1‚Å‰Šú‰»
+		System.out.println("1ï½100ã¾ã§ã®æ•´æ•°ã‚’å½“ã¦ã‚‹ã‚²ãƒ¼ãƒ ã§ã™");
+		// æœ€å¾Œã«1ã‚’å…¥åŠ›ã—ãŸã‚‰ç¶šè¡Œã€2ã‚’å…¥åŠ›ã—ãŸã‚‰çµ‚äº†ã™ã‚‹ã®ã§xã‚’1ã§åˆæœŸåŒ–
 		int x = 1;
 		while (x == 1) {
-			// 1`100‚Ì®”‚Ì—”‚ğ¶¬‚µans‚É‘ã“ü
+			// 1ï½100ã®æ•´æ•°ã®ä¹±æ•°ã‚’ç”Ÿæˆã—ansã«ä»£å…¥
 			int ans = (int) (Math.random() * 99 + 1);
 
 			while (true) {
-				System.out.println("‚¢‚­‚Â‚Å‚µ‚å‚¤H");
+				System.out.println("ã„ãã¤ã§ã—ã‚‡ã†ï¼Ÿ");
 
-				// 1`100‚ª“ü—Í‚³‚ê‚é‚Ü‚Åƒ‹[ƒv
+				// 1ï½100ãŒå…¥åŠ›ã•ã‚Œã‚‹ã¾ã§ãƒ«ãƒ¼ãƒ—
 				x = 0;
 				while (x < 1 || 100 < x) {
 					BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -21,30 +21,30 @@ public class KisoKadai2 {
 						String buf = br.readLine();
 						x = Integer.parseInt(buf);
 						if (x < 1 || 100 < x) {
-							System.out.println("1`100‚Å“š‚¦‚Ä‚­‚¾‚³‚¢");
+							System.out.println("1ï½100ã§ç­”ãˆã¦ãã ã•ã„");
 						}
 					} catch (Exception e) {
 						// e.printStackTrace();
 						x = 0;
-						System.out.println("1`100‚Å“š‚¦‚Ä‚­‚¾‚³‚¢");
+						System.out.println("1ï½100ã§ç­”ãˆã¦ãã ã•ã„");
 					}
 				}
 
-				// ³‰ğ‚©‚Ç‚¤‚©‚Ì”»’è
+				// æ­£è§£ã‹ã©ã†ã‹ã®åˆ¤å®š
 				if (x > ans)
-					System.out.println("‘å‚«‚·‚¬");
+					System.out.println("å¤§ãã™ã");
 				else if (x < ans)
-					System.out.println("¬‚³‚·‚¬");
+					System.out.println("å°ã•ã™ã");
 				else {
-					System.out.println("³‰ğ");
+					System.out.println("æ­£è§£");
 					break;
 				}
 			}
 			
-			System.out.println("‚à‚¤ˆê‰ñ‚â‚éH");
-			System.out.println("‚â‚éF1   ‚â‚ç‚È‚¢F2");
+			System.out.println("ã‚‚ã†ä¸€å›ã‚„ã‚‹ï¼Ÿ");
+			System.out.println("ã‚„ã‚‹ï¼š1   ã‚„ã‚‰ãªã„ï¼š2");
 
-			// 1,2‚ª“ü—Í‚³‚ê‚é‚Ü‚Åƒ‹[ƒv
+			// 1,2ãŒå…¥åŠ›ã•ã‚Œã‚‹ã¾ã§ãƒ«ãƒ¼ãƒ—
 			x = 0;
 			while (x < 1 || 2 < x) {
 				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -52,15 +52,15 @@ public class KisoKadai2 {
 					String buf = br.readLine();
 					x = Integer.parseInt(buf);
 					if (x < 1 || 2 < x) {
-						System.out.println("1or2‚Å“š‚¦‚Ä‚­‚¾‚³‚¢");
+						System.out.println("1or2ã§ç­”ãˆã¦ãã ã•ã„");
 					}
 				} catch (Exception e) {
 					// e.printStackTrace();
 					x = 0;
-					System.out.println("1or2‚Å“š‚¦‚Ä‚­‚¾‚³‚¢");
+					System.out.println("1or2ã§ç­”ãˆã¦ãã ã•ã„");
 				}
 			}
-			// Œp‘±‚È‚çans‚Éran‚Ì’l‚ğ‘ã“ü‚µƒ‹[ƒvAI—¹‚È‚çƒ‹[ƒv‚ğ”²‚¯‚ÄƒvƒƒOƒ‰ƒ€I—¹
+			// ç¶™ç¶šãªã‚‰ansã«ranã®å€¤ã‚’ä»£å…¥ã—ãƒ«ãƒ¼ãƒ—ã€çµ‚äº†ãªã‚‰ãƒ«ãƒ¼ãƒ—ã‚’æŠœã‘ã¦ãƒ—ãƒ­ã‚°ãƒ©ãƒ çµ‚äº†
 			if (x != 1) break;
 		}
 	}
