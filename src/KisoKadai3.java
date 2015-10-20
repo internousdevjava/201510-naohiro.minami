@@ -61,7 +61,7 @@ public class KisoKadai3 {
 						System.out.print("もう一度");
 						dir_roop = 2;	//ディレクトリ名を再入力
 					}
-				}
+				}else dir_roop = 1;
 			}
 
 			// ファイル名の指定
@@ -102,8 +102,9 @@ public class KisoKadai3 {
 					} else
 						file_roop = 1;	//ファイル名決定
 				} else 
+					file_roop = 1;
 					newfile = 0;
-				
+					
 			}
 
 			if (newfile != 1) {		//新しくファイルが作成された場合は上書きで書き込む
@@ -186,7 +187,7 @@ public class KisoKadai3 {
 						System.out.print((char) ch);
 					}
 
-					fr.close();
+					//fr.close();
 					br.close();
 
 				} catch (FileNotFoundException e) {
